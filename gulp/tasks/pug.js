@@ -8,6 +8,9 @@ gulp.task('pug', () => {
     .pipe($.plumber({
       errorHandler: $.notify.onError('<%= error.message %>')
     }))
+    .pipe($.data((file) => {
+      return require(`../../${conf.json}`);
+    }))
     .pipe($.pug(conf.opts))
     .pipe($.rename(path => {
       path.dirname = path.dirname.replace('html', '.');

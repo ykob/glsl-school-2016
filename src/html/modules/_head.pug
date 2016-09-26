@@ -1,28 +1,39 @@
 -
-  var repository_name = 'glsl-school-2016';
-  var website_domain = 'https://ykob.github.io/' + repository_name;
-  var meta_path_merge = meta_path;
-  var meta_ogp_description = meta_description;
+  var title_merge = '';
+  var keywords_merge = '';
+  var theme_color = '#ffffff';
+
+  if (page.title != '')
+    title_merge = page.title + ' │ ' + meta.website_name;
+  else
+    title_merge = meta.website_name
+
+  if (page.keywords != '')
+    keywords_merge = page.keywords + ', ' + meta.keywords;
+  else
+    keywords_merge = meta_keywords_base;
 
 meta(charset="utf-8")
 meta(http-equiv="X-UA-Compatible", content="IE=edge")
-title #{meta_title}
+title #{title_merge}
 meta(name="viewport", content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1")
-meta(name="description", content=meta_description)
-meta(name="keywords", content=meta_keywords)
-meta(name="theme-color", content="#ffffff")
-link(rel="shortcut icon" href="./img/icon.ico")
-link(rel="apple-touch-icon" href="./img/apple-touch-icon.png")
+meta(name="description", content=page.description)
+meta(name="keywords", content=keywords_merge)
+meta(name="theme-color", content=theme_color)
+meta(name="msapplication-TileImage", content="/img/common/ms_tileimage.png")
+meta(name="msapplication-TileColor", content=theme_color)
+link(rel="shortcut icon" href="/img/common/icon.ico")
+link(rel="apple-touch-icon" sizes="180x180" href="/img/common/app-icon.png")
 link(rel="stylesheet" href="./css/main.css")
 
-meta(property="og:title", content=meta_title)
-meta(property="og:site_name", content=meta_title)
+meta(property="og:title", content=title_merge)
+meta(property="og:site_name", content=meta.website_name)
 meta(property="og:type", content="website")
-meta(property="og:description", content=meta_ogp_description)
-meta(property="og:url", content=website_domain + meta_path)
-meta(property="og:image", content=website_domain + '/img/' + meta_ogp_img)
+meta(property="og:description", content=page.ogp_description)
+meta(property="og:url", content=meta.domain + page.path)
+meta(property="og:image", content=meta.domain + '/img/common/' + page.ogp_img)
 
 meta(name="twitter:card", content="summary_large_image")
-meta(name="twitter:title", content=meta_title)
-meta(name="twitter:description", content=meta_ogp_description)
-meta(name="twitter:image", content=website_domain + '/img/' + meta_ogp_img)
+meta(name="twitter:title", content=title_merge)
+meta(name="twitter:description", content=page.ogp_description)
+meta(name="twitter:image", content=meta.domain + '/img/common/' + page.ogp_img)

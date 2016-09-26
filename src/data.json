@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "domain": "https://ykob.github.io/glsl-school-2016",
+    "website_name": "glsl school 2016",
+    "keywords": "keyword base",
+    "repository_name": "glsl-school-2016"
+  },
+  "pages": {
+    "index": {
+      "title": "",
+      "keywords": "WebGL, three.js",
+      "description": "2016年10月開講の短期集中GLSLスクールに関するレポートと、講習を受けて作成したデモを置いています。",
+      "path": "/",
+      "ogp_description": "2016年10月開講の短期集中GLSLスクールに関するレポートと、講習を受けて作成したデモを置いています。",
+      "ogp_img": "share.jpg"
+    },
+    "page001": {
+      "title": "demo title #001",
+      "keywords": "WebGL, three.js",
+      "description": "demo description #001",
+      "path": "/",
+      "ogp_description": "page ogp description",
+      "ogp_img": "ogp001.jpg"
+    }
+  }
+}
