@@ -8,5 +8,11 @@ html(lang="ja")
   body
     h1
       |glsl school 2016
+    .p-demo-index
+      each elm in pages
+        if (elm.title !== '')
+          .p-demo-index__item
+            a(href=elm.path)
+              |#{elm.title}
     script(src="./js/vendor.js")
     script(src="./js/main.js")

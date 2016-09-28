@@ -18,7 +18,7 @@
       "title": "demo title #001",
       "keywords": "WebGL, three.js",
       "description": "demo description #001",
-      "path": "/",
+      "path": "/001.html",
       "ogp_description": "page ogp description",
       "ogp_img": "ogp001.jpg"
     }
