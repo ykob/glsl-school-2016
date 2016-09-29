@@ -1,0 +1,17 @@
+.l-page {
+  max-width: $break-point-pc;
+  box-sizing: border-box;
+  margin: 0 auto;
+  @include l-pc-all {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  @include l-tablet {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @include l-mobile {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
