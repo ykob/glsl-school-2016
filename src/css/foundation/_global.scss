@@ -11,6 +11,17 @@ a {
   color: $color-text;
   text-decoration: none;
 }
+p, ul, ol {
+  @include l-pc-all {
+    @include fontSize(16);
+  }
+  @include l-tablet {
+    @include fontSize(14);
+  }
+  @include l-mobile {
+    @include fontSize(14);
+  }
+}
 ::selection {
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
