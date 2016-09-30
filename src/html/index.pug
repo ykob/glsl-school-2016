@@ -7,13 +7,22 @@ html(lang="ja")
     include ./modules/_head.pug
   body
     .l-page
-      h1
-        |glsl school 2016
-      .p-demo-index
-        each elm in pages
-          if (elm.title !== '')
-            .p-demo-index__item
-              a(href=elm.path)
-                |#{elm.title}
+      .p-index-contents
+        h1.p-index-contents__title
+          |glsl school 2016
+        p
+          |2016年10月から開催を予定している「
+          a(href="https://webgl.souhonzan.org/entry/?v=0703")
+            |短期集中GLSLスクール
+          |」において学習した内容を元に制作したデモ集です。
+        p
+          |GitHubのリポジトリにはスクールのレポートも掲載する予定です。
+        h2 Demos
+        ul.p-demo-index
+          each elm in pages
+            if (elm.title !== '')
+              li.p-demo-index__item
+                a(href=elm.path)
+                  |#{elm.title}
     script(src="./js/vendor.js")
     script(src="./js/main.js")

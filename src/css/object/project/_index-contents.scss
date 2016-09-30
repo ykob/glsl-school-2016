@@ -1,0 +1,5 @@
+.p-index-contents {
+  &__title {
+    @include flexFontSize(5);
+  }
+}
