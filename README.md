@@ -8,7 +8,7 @@
 
 ## レポート
 
-- [一回 10月8日（土） シェーダコーディングの基本編](https://github.com/ykob/glsl-school-2016/blob/master/report/20161008.md)
+- [第一回 10月8日（土） シェーダコーディングの基本編](https://github.com/ykob/glsl-school-2016/blob/master/report/20161008.md)
 - 第二回 10月22日（土） フラグメントシェーダ活用編
 - 第三回 11月5日（土） 頂点シェーダ活用編
 - 第四回 11月19日（土） より高度な技術と表現編
